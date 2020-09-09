@@ -13,8 +13,11 @@
 <body>
 
 <p>第一个springmvc项目</p>
-<p><a href="some.do">发起some.do请求</a></p>
-<p><a href="other.do">发起other.do请求</a></p>
+<p><a href="user/first.do">发起some.do请求</a></p>
+<br>
+<form action="user/first.do" method="post">
+    <input type="submit" value="post请求other.do">
+</form>
 
 </body>
 </html>
