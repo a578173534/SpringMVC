@@ -17,17 +17,28 @@
             $("button").click(function () {
                 //alert("button click");
                 $.ajax({
-                    url: "returnVoid-ajax.do",
+                    //url: "returnVoid-ajax.do",
+                    //url: "returnStudentJsonArray.do",
+                    url: "returnStringData.do",
                     data: {
                         name: "邝贤发",
                         age: 20
                     },
                     type: "post",
-                    dataType: "json",
+                    dataType: "text",
                     success: function (resp) {
+
                         //resp从服务器端返回的是json格式的字符串 {"name":"邝贤发","age":20}
                         //jquery会把字符串转为json对象， 赋值给resp形参。
-                        alert(resp.name + "    " + resp.age);
+
+                        // [{"name":"邝贤发同学","age":20},{"name":"张三","age":28}]
+                        //alert(resp.name + "    " + resp.age);
+
+                        /*$.each(resp, function (i, n) {
+                            alert(n.name + "    " + n.age)
+                        })*/
+
+                        alert("返回的是文本数据：" + resp);
                     }
                 })
             })
