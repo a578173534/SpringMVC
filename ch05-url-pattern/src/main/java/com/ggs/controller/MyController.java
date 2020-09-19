@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class MyController {
 
-    @RequestMapping(value = "/some.do")
+    @RequestMapping(value = "/some")
     public ModelAndView doSome(String name, Integer age) {
         System.out.println("doSome name=" + name + "   age=" + age);
 

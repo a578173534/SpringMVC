@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<form action="some.do" method="post">
+<form action="some" method="post">
     姓名：<input type="text" name="name">
     <br>
     年龄：<input type="text" name="age">
@@ -23,7 +23,8 @@
 
 <br>
 
-<img src="images/p1.jpg" alt="我是一个静态资源，不能显示">
+<img src="images/p3.jpg" alt="我是一个静态资源，不能显示">
 
+<img src="static/images/p1.jpg">
 </body>
 </html>
