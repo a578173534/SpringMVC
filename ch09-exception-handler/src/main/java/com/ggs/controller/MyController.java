@@ -27,7 +27,7 @@ public class MyController {
 
         //try {
         //根据请求参数抛出异常
-        if (!"邝贤发".equals(name)) {
+        if (!"kxf".equals(name)) {
             throw new NameException("姓名不正确！！！");
         }
         if (age == null || age > 80) {

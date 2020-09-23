@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: xtmely
-  Date: 2020/9/8
-  Time: 11:33
+  Date: 2020/9/23
+  Time: 11:00
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -12,9 +12,7 @@
 </head>
 <body>
 
-<h3>/WEB-INF/view/show.jsp从request作用域获取数据</h3>
-<h3>myname数据:${myname}</h3>
-<h3>myage数据:${myage}</h3>
+tips.jsp 请求被拦截，不能执行
 
 </body>
 </html>
